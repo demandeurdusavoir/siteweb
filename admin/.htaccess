@@ -1,0 +1,4 @@
+ AuthType Basic
+ AuthName "Authentication Required"
+ AuthUserFile "c:\xampp\htdocs\jour9\siteweb\admin\.htpasswd"
+ Require valid-user

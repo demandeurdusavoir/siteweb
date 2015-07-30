@@ -1,0 +1,56 @@
+<?php
+/* Création d'un site dynamique en php
+1- Créer une ossature html pour une page index.php vide avec un début de style css et un message de bienvenu sur le body
+2- Diviser votre page en 3 parties distinctes (footer.inc.php, header.inc.php)
+3- Créer un menu de navigation dans le fichier header.inc.php avec les liens suivants: Accueil, Inscription, Contact, Adhérents
+4- Créer deux pages inscription.php et contact.php, adherents.php
+5- Créer la page contact.php, c'est un formulaire qui contient une liste déroulante (Mr, Mme, Mlle), un nom, un prénom, une zone texte qui sera le message à envoyer. dans le fichier contact.php
+6- Vérifier la validité des données une fois le formulaire est soumis sur la même page contact.php
+7- En vous renseignant sur php.net trouvez la fonction qui permet d'envoyer un mail.
+8- Créer un formulaire inscription qui prendra la civilité, le nom, le prénom, et qui aura pour suite d'éléments la date de naissance(3 listes déroulantes avec les jours du mois, les de l'année, des
+   années comprises entre 1920 et l'année actuelle - 18 ans) et un choix parmis la liste déroulante d'activités suivantes : natation, randonnées, cyclisme, parapente.
+9- dans un fichier fonction.inc.php créez une fonction formatDatas() qui formate le message suivant à partir des données envoyées par le formulaire
+nom;prenom;date-de-naissance(yyyy-mm-dd);activite
+10- Compléter la fonction formatDatas() de telle manière à ce qu'onrajoute la dernière ligne formatée au fichier adherent.txt
+11- récuperer le dernier ID première colonne du fichier adherents.txt et ajouter une nouvelle ligne en prenant comme premier élément le drnier ID + 1
+12- Rajouter un élément formulaire qui permettra de spécifier l'email de l'utilisateur, il faudra créer une fonction de validation de l'email validEmail($email)
+13- Reformater les données en ajoutant le mail dans la 6ème colonne
+14- Construiser un listing sur la page adherents.php de tous les adhérents sauvegardés dans le fichier adherents.txt : ligne par ligne doit comporter nom, prénom, âge, mail, activité à laquelle l'adhérent a souscrit
+15- Construire une page d'accueil en récupérant les fichiers html déposés sur le répertoire pages/ et afficher le contenu de ces fichiers sur la page d'accueil tel que demandé
+16- Reformater les liens des titres des pages statiques
+*/
+
+
+
+/*
+1- Créer une ossature html pour une page index.php vide avec un début de style css et un message de bienvenu sur le body et la date d'aujourd'hui sur le header
+2- diviser votre page en 3 partie distinct (footer.inc.php, header.inc.php)
+3- Créer un menu de navigation dans le fichier header.inc.php avec les liens suivants : Accueil , Inscription , Contact , Adhérents
+4- Créer deux pages inscription.php et  contact.php , adherents.php
+5- créer la page contact.php , c 'est une formulaire qui contient une liste déroulante (Mr , Mme , Mlle), un nom , un prénom ,
+une zone texte qui sera le message à envoyer et un boutton envoyer . dans le fichier contact.php
+6- Vérifier la validité des données une fois le formulaire est soumis sur la même page contact.php
+7- en vous renseignant sur php.net trouver la fonction qui permert d'envoyer un mail.
+8- Créer un formulaire inscription.php qui reprendra la civilite le nom le prenom , et qui aura pour suite d'éléments
+la date de naissance (3 liste deroulante avec les jours du mois  , les mois de l'années , des années comprises entre 1920 et l'année actuelle - 18 ans ) et un choix parmis la liste déroulante suivante d'activités : natation , randonnée , cyclisme , parapente
+9- dans une fichier fonctions.inc.php Créer une fonction formatDatas() qui formate le message suivant à partir des données envoyées par le formulaire
+nom;prenom;date-de-naissance(yyyy-mm-dd);activité
+10 - Compléter la fonction formatDatas() de tel maniere à ce qu' on rajpoute la dérnière ligne formattée au fichier adherents.txt
+11 - récupperer le dernier ID première colonne du fichier adherents.txt et ajouter une nouvelle ligne en prenant comme premier element le dernier ID + 1
+12 - Rajouter un element formulaire qui permettera de spécifier l'email de l'utilisateur , il faudera créer une fonction de validation de l'email validMail($email)
+13 - reformater les données en ajoutant le mail dans la 6 eme colonne
+14 - Construiser  un listing sur la page adherents.php de tous les adhérents sauvegardés dans le fichier adherents.txt : ligne par ligne doit comporter civilite nom , prenom , l'âge , mail , activité à la quelle l'adherent a souscris
+15 - Contruire une page d'accueil en récupperant les fichiers html déposés sur le répértoire pages/  et affichier le contenu de ces fichiers la sur la page d'accueil tel que demandé
+16 - Reformatter les liens des titres  des pages statiques page1, page1, ..... de telles manière à ce qu'elles deviennent page.php?page=nom_du_fichier
+17 - Créer un fichier nommé pages.php qui prend en paramètre page et qui affiche le contenu de la page en cours
+
+/*
+
+
+/*
+
+Exercice 1
+
+- Créer la requête qui permet d'afficher tous les adherents ordonnée par date de naissance Descendente
+- Créer les lignes de code PHP qui permet d'afficher la suite du tableau au niveau adherents.php
+*/
